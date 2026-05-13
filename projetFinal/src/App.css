@@ -1,0 +1,84 @@
+/* App.css — styles spécifiques à l'application */
+
+.home-page {
+  min-height: calc(100vh - 56px - 60px);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1611605696408-f9c09b232b6c?auto=format&fit=crop&w=1470&q=80')
+    no-repeat center center / cover;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 560px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #c8c4b8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f0f13;
+  background-color: var(--accent);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.hero-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  margin: 20px auto;
+  display: block;
+  border: 2px solid #000; /* contour noir fixe */
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #000; /* reste noir même au focus */
+}
+footer {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si besoin */
+  padding: 16px;
+  background-color: var(--social-bg);
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  margin: 0;
+  text-align: center;      /* texte centré */
+}

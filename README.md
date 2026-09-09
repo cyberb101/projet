@@ -33,4 +33,3 @@ suppression
 ● Améliorations visuelles (UI / CSS / gestion de l’état de chargement et 
 des erreurs) 
 ● Tests et correction de bugs 
-Auteur : Hussein Nasser
